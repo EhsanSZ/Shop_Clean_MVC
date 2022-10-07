@@ -10,3 +10,10 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastru
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Application.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Persistance.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Persistance.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete

@@ -1,3 +1,4 @@
+using Infrastructure.IdentityConfigs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Persistence.Contexts;
+using System;
 
 namespace WebSite.EndPoint
 {
@@ -27,6 +29,15 @@ namespace WebSite.EndPoint
             services.AddDbContext<DataBaseContext>(option => option.UseSqlServer(connection));
             services.AddDbContext<IdentityDatabaseContext>(option => option.UseSqlServer(connection));
 
+            services.AddIdentityService(Configuration);
+            services.AddAuthorization();
+            services.ConfigureApplicationCookie(option =>
+            {
+                option.ExpireTimeSpan = TimeSpan.FromDays(7);
+                option.LoginPath = "/account/login";
+                option.AccessDeniedPath = "/Account/AccessDenied";
+                option.SlidingExpiration = true;
+            });
             #endregion
         }
 
@@ -48,6 +59,7 @@ namespace WebSite.EndPoint
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

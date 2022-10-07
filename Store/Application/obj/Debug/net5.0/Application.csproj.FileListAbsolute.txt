@@ -9,3 +9,4 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\ref\Application.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache

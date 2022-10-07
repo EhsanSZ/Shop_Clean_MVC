@@ -9,3 +9,12 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\ref\Persistance.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Persistance.runtimeconfig.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Persistance.runtimeconfig.dev.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Application.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.genruntimeconfig.cache
