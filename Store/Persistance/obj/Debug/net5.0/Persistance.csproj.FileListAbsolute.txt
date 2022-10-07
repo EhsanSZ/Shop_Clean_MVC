@@ -1,0 +1,11 @@
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Persistance.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Persistance.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\ref\Persistance.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Persistance.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\ref\Persistance.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.pdb

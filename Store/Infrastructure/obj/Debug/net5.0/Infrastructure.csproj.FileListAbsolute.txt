@@ -1,0 +1,12 @@
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
