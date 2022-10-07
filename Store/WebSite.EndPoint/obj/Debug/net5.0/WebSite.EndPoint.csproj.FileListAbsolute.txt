@@ -86,3 +86,6 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Microso
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Infrastructure.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Infrastructure.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Account\Profile.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
