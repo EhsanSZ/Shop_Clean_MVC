@@ -4,14 +4,14 @@
     "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj": {}
   },
   "projects": {
-    "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj": {
+    "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj",
-        "projectName": "WebSite.EndPoint",
-        "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj",
+        "projectUniqueName": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Ehsan\\.nuget\\packages\\",
-        "outputPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\obj\\",
+        "outputPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ehsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,225 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Ehsan\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ehsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj",
+        "projectName": "Persistance",
+        "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj",
+        "packagesPath": "C:\\Users\\Ehsan\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ehsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\Application.csproj": {
+                "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Application\\Application.csproj"
+              },
+              "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj",
+        "projectName": "WebSite.EndPoint",
+        "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj",
+        "packagesPath": "C:\\Users\\Ehsan\\.nuget\\packages\\",
+        "outputPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ehsan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj": {
+                "projectPath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
