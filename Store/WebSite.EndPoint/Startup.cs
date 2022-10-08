@@ -1,4 +1,5 @@
 using Application.Interfaces.Contexts;
+using Application.Visitors.SaveVisitorInfo;
 using Infrastructure.IdentityConfigs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Persistence.Contexts;
 using Persistence.Contexts.MongoContext;
 using System;
+using WebSite.EndPoint.Utilities.Filters;
 
 namespace WebSite.EndPoint
 {
@@ -43,6 +45,8 @@ namespace WebSite.EndPoint
             #endregion
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
+            services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
+            services.AddScoped<SaveVisitorFilter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
