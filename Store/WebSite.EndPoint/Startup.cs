@@ -1,3 +1,4 @@
+using Application.Interfaces.Contexts;
 using Infrastructure.IdentityConfigs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Persistence.Contexts;
+using Persistence.Contexts.MongoContext;
 using System;
 
 namespace WebSite.EndPoint
@@ -39,6 +41,8 @@ namespace WebSite.EndPoint
                 option.SlidingExpiration = true;
             });
             #endregion
+
+            services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

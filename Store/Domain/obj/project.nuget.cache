@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+VAVQNN+BL7z0Ic0mqdOwjCPiDVKn0JBO9SUhUZOosm61nSEwsYmMHkiyYxWHJOZgMv1Z8SX8XLv7793Z5xXGw==",
+  "dgSpecHash": "EQWIlYQ9e1y73iAtbEvC/3fdufwtpK9o8DeRfTArn2TbYG3alqbJzoJPy9vlt1eD6BGvqrVeDl1fkVRxXNSgzw==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,9 @@
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\mongodb.bson\\2.17.1\\mongodb.bson.2.17.1.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

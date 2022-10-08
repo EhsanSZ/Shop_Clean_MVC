@@ -30,7 +30,12 @@
       "ProjectGuid": "2dbdadd2-0757-4d8e-bcc2-eac9925bbcef",
       "DisplayName": "WebSite.EndPoint",
       "ColorIndex": 4
+    },
+    "0925a7d3-0507-43fa-8a3a-5ac798621540": {
+      "ProjectGuid": "0925a7d3-0507-43fa-8a3a-5ac798621540",
+      "DisplayName": "Admin.EndPoint",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
