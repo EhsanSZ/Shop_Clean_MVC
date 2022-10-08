@@ -1342,6 +1342,7 @@
     <script src="~/Theme/assets/js/theme.js"></script>
     <!-- Here goes your custom.js -->
     <script src="~/Theme/assets/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 
 </html>
