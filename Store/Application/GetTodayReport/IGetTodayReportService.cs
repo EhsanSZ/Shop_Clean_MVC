@@ -30,9 +30,11 @@ namespace Application.Visitors.GetTodayReport
 
             var TodayPageViewCount = visitorMongoCollection.AsQueryable()
                 .Where(p => p.Time >= start && p.Time < end).LongCount();
+
             var TodayVisitorCount = visitorMongoCollection.AsQueryable()
-                .Where(p => p.Time >= start && p.Time < end).GroupBy(p => p.VisitorId)
-                .LongCount();
+                .Where(p => p.Time >= start && p.Time < end)
+                .GroupBy(p => p.VisitorId).LongCount();
+
             var AllPageViewCount = visitorMongoCollection.AsQueryable().LongCount();
             var AllVisitorCount = visitorMongoCollection.AsQueryable()
                 .GroupBy(p => p.VisitorId).LongCount();
@@ -79,8 +81,8 @@ namespace Application.Visitors.GetTodayReport
 
         private VisitCountDto GTetVisitPerHour(DateTime start, DateTime end)
         {
-            var TodayPageViewList = visitorMongoCollection.AsQueryable().Where(
-              p => p.Time >= start && p.Time < end)
+            var TodayPageViewList = visitorMongoCollection.AsQueryable()
+                .Where(p => p.Time >= start && p.Time < end)
                 .Select(p => new { p.Time }).ToList();
 
             VisitCountDto visitPerHour = new VisitCountDto()

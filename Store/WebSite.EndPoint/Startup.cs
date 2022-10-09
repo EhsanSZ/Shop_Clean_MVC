@@ -11,6 +11,9 @@ using Persistence.Contexts;
 using Persistence.Contexts.MongoContext;
 using System;
 using WebSite.EndPoint.Utilities.Filters;
+using WebSite.EndPoint.Hubs;
+using Application.Visitors.VisitorOnline;
+using WebSite.EndPoint.Utilities.Middlewares;
 
 namespace WebSite.EndPoint
 {
@@ -46,7 +49,10 @@ namespace WebSite.EndPoint
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
             services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
+            services.AddTransient<IIVisitorOnlineService, VisitorOnlineService>();
             services.AddScoped<SaveVisitorFilter>();
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +68,7 @@ namespace WebSite.EndPoint
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseSetVisitorId();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -75,6 +82,7 @@ namespace WebSite.EndPoint
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapHub<OnlineVisitorHub>("/chathub");
             });
         }
     }
