@@ -94,3 +94,4 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Persistan
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Application.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Persistance.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\Visitor\Index.cshtml.g.cs

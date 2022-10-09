@@ -13,6 +13,7 @@ namespace Application.Visitors.GetTodayReport
         ResultTodayReportDto Execute();
     }
 
+
     public class GetTodayReportService : IGetTodayReportService
     {
         private readonly IMongoDbContext<Visitor> _mongoDbContext;
