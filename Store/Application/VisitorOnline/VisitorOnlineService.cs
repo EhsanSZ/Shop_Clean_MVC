@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Application.Visitors.VisitorOnline
 {
-    public class VisitorOnlineService : IIVisitorOnlineService
+    public class VisitorOnlineService : IVisitorOnlineService
     {
         private readonly IMongoDbContext<OnlineVisitor> mongoDbContext;
         private readonly IMongoCollection<OnlineVisitor> mongoCollection;

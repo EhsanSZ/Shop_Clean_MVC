@@ -1,10 +1,14 @@
-﻿using System.Threading;
+﻿using Domain.Catalogs;
+using Microsoft.EntityFrameworkCore;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Application.Interfaces.Contexts
 {
     public interface IDataBaseContext
     {
+        DbSet<CatalogBrand> CatalogBrands { get; set; }
+        DbSet<CatalogType> CatalogTypes { get; set; }
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
 

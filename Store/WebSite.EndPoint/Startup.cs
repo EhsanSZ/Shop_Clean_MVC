@@ -49,7 +49,7 @@ namespace WebSite.EndPoint
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
             services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
-            services.AddTransient<IIVisitorOnlineService, VisitorOnlineService>();
+            services.AddTransient<IVisitorOnlineService, VisitorOnlineService>();
             services.AddScoped<SaveVisitorFilter>();
 
             services.AddSignalR();

@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Application.Visitors.VisitorOnline
 {
-    public interface IIVisitorOnlineService
+    public interface IVisitorOnlineService
     {
         void ConnectUser(string ClientId);
         void DisConnectUser(string ClientId);

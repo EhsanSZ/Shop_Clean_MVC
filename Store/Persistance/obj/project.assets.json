@@ -1737,6 +1737,7 @@
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.17",
           "MongoDB.Driver": "2.17.1"
         },
         "compile": {

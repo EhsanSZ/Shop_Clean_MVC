@@ -7,8 +7,8 @@ namespace WebSite.EndPoint.Hubs
 {
     public class OnlineVisitorHub : Hub
     {
-        private readonly IIVisitorOnlineService visitorOnlineService;
-        public OnlineVisitorHub(IIVisitorOnlineService visitorOnlineService)
+        private readonly IVisitorOnlineService visitorOnlineService;
+        public OnlineVisitorHub(IVisitorOnlineService visitorOnlineService)
         {
             this.visitorOnlineService = visitorOnlineService;
         }

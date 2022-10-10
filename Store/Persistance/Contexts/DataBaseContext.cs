@@ -1,6 +1,8 @@
 ﻿using Application.Interfaces.Contexts;
 using Domain.Attributes;
+using Domain.Catalogs;
 using Microsoft.EntityFrameworkCore;
+using Persistence.EntityConfigurations;
 using System;
 using System.Linq;
 
@@ -13,6 +15,8 @@ namespace Persistence.Contexts
         {
 
         }
+        public DbSet<CatalogBrand> CatalogBrands { get; set; }
+        public DbSet<CatalogType> CatalogTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -27,6 +31,12 @@ namespace Persistence.Contexts
                     builder.Entity(entityType.Name).Property<bool>("IsRemoved");
                 }
             }
+
+            builder.Entity<CatalogType>()
+            .HasQueryFilter(m => EF.Property<bool>(m, "IsRemoved") == false);
+
+            builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
+            builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
 
             base.OnModelCreating(builder);
         }
