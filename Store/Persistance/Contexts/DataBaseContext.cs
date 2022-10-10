@@ -3,6 +3,7 @@ using Domain.Attributes;
 using Domain.Catalogs;
 using Microsoft.EntityFrameworkCore;
 using Persistence.EntityConfigurations;
+using Persistence.Seeds;
 using System;
 using System.Linq;
 
@@ -25,10 +26,10 @@ namespace Persistence.Contexts
             {
                 if (entityType.ClrType.GetCustomAttributes(typeof(AuditableAttribute), true).Length > 0)
                 {
-                    builder.Entity(entityType.Name).Property<DateTime>("InsertTime");
+                    builder.Entity(entityType.Name).Property<DateTime>("InsertTime").HasDefaultValue(DateTime.Now);
                     builder.Entity(entityType.Name).Property<DateTime?>("UpdateTime");
                     builder.Entity(entityType.Name).Property<DateTime?>("RemoveTime");
-                    builder.Entity(entityType.Name).Property<bool>("IsRemoved");
+                    builder.Entity(entityType.Name).Property<bool>("IsRemoved").HasDefaultValue(false);
                 }
             }
 
@@ -37,6 +38,8 @@ namespace Persistence.Contexts
 
             builder.ApplyConfiguration(new CatalogBrandEntityTypeConfiguration());
             builder.ApplyConfiguration(new CatalogTypeEntityTypeConfiguration());
+
+            DataBaseContextSeed.CatalogSeed(builder);
 
             base.OnModelCreating(builder);
         }

@@ -76,11 +76,7 @@ namespace Application.Catalogs.CatalogTypes
             var data = context.CatalogTypes.Find(Id);
             var result = mapper.Map<CatalogTypeDto>(data);
 
-            return new BaseDto<CatalogTypeDto>(
-                true,
-                null,
-                result
-                );
+            return new BaseDto<CatalogTypeDto>(true ,null ,result);
         }
 
         public PaginatedItemsDto<CatalogTypeListDto> GetList(int? parentId, int page, int pageSize)

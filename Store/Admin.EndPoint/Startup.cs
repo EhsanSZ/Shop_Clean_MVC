@@ -1,3 +1,4 @@
+using Admin.EndPoint.MappingProfiles;
 using Application.Catalogs.CatalogTypes;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetTodayReport;
@@ -47,6 +48,7 @@ namespace Admin.EndPoint
 
             //mapper
             services.AddAutoMapper(typeof(CatalogMappingProfile));
+            services.AddAutoMapper(typeof(CatalogVMMappingProfile));
 
         }
 

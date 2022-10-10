@@ -106,3 +106,9 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Infrastru
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Infrastructure.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Common.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogType\Create.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogType\Delete.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogType\Edit.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogType\Index.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Humanizer.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

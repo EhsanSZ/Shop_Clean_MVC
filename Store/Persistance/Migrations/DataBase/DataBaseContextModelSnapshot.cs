@@ -32,10 +32,14 @@ namespace Persistance.Migrations.DataBase
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("InsertTime")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2022, 10, 10, 12, 27, 36, 558, DateTimeKind.Local).AddTicks(329));
 
                     b.Property<bool>("IsRemoved")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<DateTime?>("RemoveTime")
                         .HasColumnType("datetime2");
@@ -46,6 +50,38 @@ namespace Persistance.Migrations.DataBase
                     b.HasKey("Id");
 
                     b.ToTable("CatalogBrand");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Brand = "سامسونگ"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Brand = "شیائومی "
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Brand = "اپل"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Brand = "هوآوی"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Brand = "نوکیا "
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Brand = "ال جی"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogType", b =>
@@ -56,10 +92,14 @@ namespace Persistance.Migrations.DataBase
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("InsertTime")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2022, 10, 10, 12, 27, 36, 618, DateTimeKind.Local).AddTicks(9795));
 
                     b.Property<bool>("IsRemoved")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
 
                     b.Property<int?>("ParentCatalogTypeId")
                         .HasColumnType("int");
@@ -80,6 +120,37 @@ namespace Persistance.Migrations.DataBase
                     b.HasIndex("ParentCatalogTypeId");
 
                     b.ToTable("CatalogType");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Type = "کالای دیجیتال"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ParentCatalogTypeId = 1,
+                            Type = "لوازم جانبی گوشی"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ParentCatalogTypeId = 2,
+                            Type = "پایه نگهدارنده گوشی"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ParentCatalogTypeId = 2,
+                            Type = "پاور بانک (شارژر همراه)"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ParentCatalogTypeId = 2,
+                            Type = "کیف و کاور گوشی"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Catalogs.CatalogType", b =>
