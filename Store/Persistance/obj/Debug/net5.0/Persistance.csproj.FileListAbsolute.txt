@@ -18,3 +18,5 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Domain.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.csproj.AssemblyReference.cache
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.csproj.CopyComplete
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\obj\Debug\net5.0\Persistance.genruntimeconfig.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Persistance\bin\Debug\net5.0\Common.pdb

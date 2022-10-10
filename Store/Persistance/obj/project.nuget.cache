@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MCJS2bkA7FW59VDIZ6m+V0VvckCxtr2K24KftaGkvsP9pHI+CVx+uxBi3OTpExtA+ocIMGUX5xr+kFVDYi99PA==",
+  "dgSpecHash": "otXXgPGPdRX+N54qXrQnkVPRBlMUFfj0wC5vPZkGRcFtbT/K2acJY6RPzQmCjq+mW9LxoQkBDIaAjYs4+u4BsA==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Persistance\\Persistance.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ehsan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",

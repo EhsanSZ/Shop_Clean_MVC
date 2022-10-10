@@ -15,6 +15,7 @@ using WebSite.EndPoint.Hubs;
 using Application.Visitors.VisitorOnline;
 using WebSite.EndPoint.Utilities.Middlewares;
 
+
 namespace WebSite.EndPoint
 {
     public class Startup
@@ -53,6 +54,8 @@ namespace WebSite.EndPoint
             services.AddScoped<SaveVisitorFilter>();
 
             services.AddSignalR();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

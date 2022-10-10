@@ -17,3 +17,5 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Domain.pd
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Persistance.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Application.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Infrastructure\bin\Debug\net5.0\Common.pdb

@@ -56,10 +56,12 @@ namespace Persistence.Contexts
                 var updated = entityType.FindProperty("UpdateTime");
                 var RemoveTime = entityType.FindProperty("RemoveTime");
                 var IsRemoved = entityType.FindProperty("IsRemoved");
+
                 if (item.State == EntityState.Added && inserted != null)
                 {
                     item.Property("InsertTime").CurrentValue = DateTime.Now;
                 }
+
                 if (item.State == EntityState.Modified && updated != null)
                 {
                     item.Property("UpdateTime").CurrentValue = DateTime.Now;
@@ -69,6 +71,7 @@ namespace Persistence.Contexts
                 {
                     item.Property("RemoveTime").CurrentValue = DateTime.Now;
                     item.Property("IsRemoved").CurrentValue = true;
+                    item.State = EntityState.Modified;
                 }
             }
             return base.SaveChanges();

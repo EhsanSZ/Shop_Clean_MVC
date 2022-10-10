@@ -13,3 +13,5 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\bin\Debug\net5.0\Domain.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\bin\Debug\net5.0\Domain.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\bin\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Application\bin\Debug\net5.0\Common.pdb
