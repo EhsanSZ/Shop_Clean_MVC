@@ -12,9 +12,7 @@ namespace Persistence.EntityConfigurations
         public void Configure(EntityTypeBuilder<CatalogBrand> builder)
         {
             builder.ToTable("CatalogBrand");
-            builder.Property(cb => cb.Brand)
-              .IsRequired()
-               .HasMaxLength(100);
+            builder.Property(cb => cb.Brand).IsRequired().HasMaxLength(100);
         }
     }
 }

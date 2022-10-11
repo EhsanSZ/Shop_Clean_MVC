@@ -39,6 +39,7 @@ namespace Application.Visitors.GetTodayReport
             var AllVisitorCount = visitorMongoCollection.AsQueryable()
                 .GroupBy(p => p.VisitorId).LongCount();
 
+
             VisitCountDto visitPerHour = GTetVisitPerHour(start, end);
 
             VisitCountDto visitPerDay = GetVisitPerDay();
@@ -59,6 +60,8 @@ namespace Application.Visitors.GetTodayReport
                     Time = p.Time,
                     VisitorId = p.VisitorId
                 }).ToList();
+
+
             return new ResultTodayReportDto
             {
                 GeneralStats = new GeneralStatsDto
@@ -78,6 +81,7 @@ namespace Application.Visitors.GetTodayReport
                 visitors = visitors,
             };
         }
+
 
         private VisitCountDto GTetVisitPerHour(DateTime start, DateTime end)
         {
@@ -104,11 +108,14 @@ namespace Application.Visitors.GetTodayReport
         {
             DateTime MonthStart = DateTime.Now.Date.AddDays(-30);
             DateTime MonthEnds = DateTime.Now.Date.AddDays(1);
+
             var Month_PageViewList = visitorMongoCollection.AsQueryable()
                 .Where(p => p.Time >= MonthStart && p.Time < MonthEnds)
                 .Select(p => new { p.Time })
                 .ToList();
+
             VisitCountDto visitPerDay = new VisitCountDto() { Display = new string[31], Value = new int[31] };
+
             for (int i = 0; i <= 30; i++)
             {
                 var currentday = DateTime.Now.AddDays(i * (-1));
@@ -122,13 +129,9 @@ namespace Application.Visitors.GetTodayReport
         private float GetAvg(long VisitPage, long Visitor)
         {
             if (Visitor == 0)
-            {
                 return 0;
-            }
             else
-            {
                 return VisitPage / Visitor;
-            }
         }
     }
 
@@ -155,11 +158,11 @@ namespace Application.Visitors.GetTodayReport
         public float ViewsPerVisitor { get; set; }
         public VisitCountDto VisitPerhour { get; set; }
     }
+
     public class VisitCountDto
     {
         public string[] Display { get; set; }
         public int[] Value { get; set; }
-
     }
 
     public class VisitorsDto
@@ -173,7 +176,6 @@ namespace Application.Visitors.GetTodayReport
         public bool IsSpider { get; set; }
         public DateTime Time { get; set; }
         public string VisitorId { get; set; }
-
     }
 
 }

@@ -17,6 +17,7 @@ namespace WebSite.EndPoint.Utilities.Middlewares
         public Task Invoke(HttpContext httpContext)
         {
             string visitorId = httpContext.Request.Cookies["VisitorId"];
+
             if (visitorId == null)
             {
                 visitorId = Guid.NewGuid().ToString();

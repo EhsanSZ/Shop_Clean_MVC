@@ -8,10 +8,12 @@ namespace WebSite.EndPoint.Hubs
     public class OnlineVisitorHub : Hub
     {
         private readonly IVisitorOnlineService visitorOnlineService;
+
         public OnlineVisitorHub(IVisitorOnlineService visitorOnlineService)
         {
             this.visitorOnlineService = visitorOnlineService;
         }
+
         public override Task OnConnectedAsync()
         {
             string VisitorId = Context.GetHttpContext().Request.Cookies["VisitorId"];

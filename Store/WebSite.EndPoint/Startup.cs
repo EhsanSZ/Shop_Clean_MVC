@@ -14,7 +14,8 @@ using WebSite.EndPoint.Utilities.Filters;
 using WebSite.EndPoint.Hubs;
 using Application.Visitors.VisitorOnline;
 using WebSite.EndPoint.Utilities.Middlewares;
-
+using Application.Catalogs.GetMenuItem;
+using Infrastructure.MappingProfile;
 
 namespace WebSite.EndPoint
 {
@@ -35,8 +36,8 @@ namespace WebSite.EndPoint
             #region  Connection String
             string connection = Configuration["ConnectionString:SqlServer"];
             services.AddDbContext<DataBaseContext>(option => option.UseSqlServer(connection));
-            services.AddDbContext<IdentityDatabaseContext>(option => option.UseSqlServer(connection));
 
+            //services.AddDbContext<IdentityDatabaseContext>(option => option.UseSqlServer(connection));
             services.AddIdentityService(Configuration);
             services.AddAuthorization();
             services.ConfigureApplicationCookie(option =>
@@ -49,12 +50,18 @@ namespace WebSite.EndPoint
             #endregion
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
+            services.AddTransient<IDataBaseContext, DataBaseContext>();
+
             services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();
             services.AddTransient<IVisitorOnlineService, VisitorOnlineService>();
+            services.AddTransient<IGetMenuItemService, GetMenuItemService>();
             services.AddScoped<SaveVisitorFilter>();
+
 
             services.AddSignalR();
 
+            //mapper
+            services.AddAutoMapper(typeof(CatalogMappingProfile));
 
         }
 

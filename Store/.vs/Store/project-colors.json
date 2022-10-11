@@ -35,7 +35,12 @@
       "ProjectGuid": "0925a7d3-0507-43fa-8a3a-5ac798621540",
       "DisplayName": "Admin.EndPoint",
       "ColorIndex": 5
+    },
+    "3ccb50db-f91f-46be-b205-e4875dcf105e": {
+      "ProjectGuid": "3ccb50db-f91f-46be-b205-e4875dcf105e",
+      "DisplayName": "Common",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

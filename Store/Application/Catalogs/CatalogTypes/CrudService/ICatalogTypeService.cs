@@ -17,7 +17,6 @@ namespace Application.Catalogs.CatalogTypes
         BaseDto<CatalogTypeDto> Edit(CatalogTypeDto catalogType);
         BaseDto<CatalogTypeDto> FindById(int Id);
         PaginatedItemsDto<CatalogTypeListDto> GetList(int? parentId, int page, int pageSize);
-
     }
 
 
@@ -38,11 +37,9 @@ namespace Application.Catalogs.CatalogTypes
             context.CatalogTypes.Add(model);
             context.SaveChanges();
             return new BaseDto<CatalogTypeDto>
-               (
-               true,
+               ( true,
                new List<string> { $"تایپ {model.Type}  با موفقیت در سیستم ثبت شد" },
-                mapper.Map<CatalogTypeDto>(model)
-             );
+                mapper.Map<CatalogTypeDto>(model));
         }
 
         public BaseDto<CatalogTypeDto> Edit(CatalogTypeDto catalogType)
@@ -51,29 +48,23 @@ namespace Application.Catalogs.CatalogTypes
             mapper.Map(catalogType, model);
             context.SaveChanges();
             return new BaseDto<CatalogTypeDto>
-              (
-               true,
+              ( true,
                 new List<string> { $"تایپ {model.Type} با موفقیت ویرایش شد" },
-
-                mapper.Map<CatalogTypeDto>(model)
-              );
+                mapper.Map<CatalogTypeDto>(model));
         }
 
         public BaseDto Remove(int Id)
         {
-            var catalogType = context.CatalogTypes.Find(Id);
+            var catalogType = context.CatalogTypes.FirstOrDefault(x=> x.Id == Id);
             context.CatalogTypes.Remove(catalogType);
             context.SaveChanges();
             return new BaseDto
-            (
-             true,
-             new List<string> { $"ایتم با موفقیت حذف شد" }
-             );
+            (true,new List<string> { $"ایتم با موفقیت حذف شد" });
         }
 
         public BaseDto<CatalogTypeDto> FindById(int Id)
         {
-            var data = context.CatalogTypes.Find(Id);
+            var data = context.CatalogTypes.FirstOrDefault(x => x.Id == Id); 
             var result = mapper.Map<CatalogTypeDto>(data);
 
             return new BaseDto<CatalogTypeDto>(true ,null ,result);

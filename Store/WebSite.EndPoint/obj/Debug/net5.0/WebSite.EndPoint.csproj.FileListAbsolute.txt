@@ -110,3 +110,6 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\libman.
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\AutoMapper.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Common.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Components\GetMenuCategories\GetMenuCategories.cshtml.g.cs
