@@ -34,7 +34,7 @@ using Application.Catalogs.GetMenuItem;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"171068264c62fd85306da96e6dc3fd42de6d0b39", @"/Views/Shared/Components/GetMenuCategories/GetMenuCategories.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7364d82374edee605703708d24b836fe4cc0350c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cbd009ecef93b67a26d4c2022aef763916a9c9a2", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_GetMenuCategories_GetMenuCategories : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<MenuItemDto>>
     {
         #pragma warning disable 1998
