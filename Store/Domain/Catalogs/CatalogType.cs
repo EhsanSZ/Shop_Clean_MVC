@@ -15,3 +15,4 @@ namespace Domain.Catalogs
         public ICollection<CatalogType> SubType { get; set; }
     }
 }
+
