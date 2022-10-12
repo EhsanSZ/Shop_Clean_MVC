@@ -1,5 +1,7 @@
 using Admin.EndPoint.MappingProfiles;
 using Application.Catalogs.CatalogTypes;
+using Application.Catalogs.CatalohItems.AddNewCatalogItem;
+using Application.Catalogs.CatalohItems.CatalogItemServices;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetTodayReport;
 using Application.Visitors.VisitorOnline;
@@ -37,6 +39,8 @@ namespace Admin.EndPoint
             services.AddScoped<IGetTodayReportService, GetTodayReportService>(); 
             services.AddTransient<IVisitorOnlineService, VisitorOnlineService>();
             services.AddTransient<ICatalogTypeService, CatalogTypeService>();
+            services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
+            services.AddTransient<ICatalogItemService, CatalogItemService>();
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
