@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ekwrD7yvr1co62WOS+WmAsPjXg2e329tTC/nP/rukSHVUqlJ6rZbWrPOKsXGT35VKv+9PbBczvIgU3SL6kaWJg==",
+  "dgSpecHash": "lqrx9Mf2wm7T/LBbPylLvBiVXq6ue/AOHtMGf7aqfNXCGw/xOXCB0+kmF9+eiWcTSnIKpOU27h5aZ8QQ5PjFfg==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ehsan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

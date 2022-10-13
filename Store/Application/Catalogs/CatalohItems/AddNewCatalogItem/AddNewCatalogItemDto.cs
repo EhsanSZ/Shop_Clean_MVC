@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using FluentValidation;
+using System.Collections.Generic;
 
 namespace Application.Catalogs.CatalohItems.AddNewCatalogItem
 {
@@ -15,6 +16,19 @@ namespace Application.Catalogs.CatalohItems.AddNewCatalogItem
         public List<AddNewCatalogItemFeature_dto> Features { get; set; }
         public List<AddNewCatalogItemImage_Dto> Images { get; set; }
 
+    }
+
+    public class AddNewCatalogItemDtoValidator : AbstractValidator<AddNewCatalogItemDto>
+    {
+        public AddNewCatalogItemDtoValidator()
+        {
+            RuleFor(p => p.Name).NotNull().WithMessage("نام کاتالوگ اجباری است");
+            RuleFor(x => x.Name).Length(2, 100);
+            RuleFor(x => x.Description).NotNull().WithMessage("توضیحات نمی تواند خالی باشد");
+            RuleFor(x => x.AvailableStock).InclusiveBetween(0, int.MaxValue);
+            RuleFor(x => x.Price).InclusiveBetween(0, int.MaxValue);
+            RuleFor(x => x.Price).NotNull();
+        }
     }
 }
 

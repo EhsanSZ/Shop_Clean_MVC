@@ -5,6 +5,7 @@ using Application.Catalogs.CatalohItems.CatalogItemServices;
 using Application.Interfaces.Contexts;
 using Application.Visitors.GetTodayReport;
 using Application.Visitors.VisitorOnline;
+using FluentValidation;
 using Infrastructure.MappingProfile;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -53,6 +54,9 @@ namespace Admin.EndPoint
             //mapper
             services.AddAutoMapper(typeof(CatalogMappingProfile));
             services.AddAutoMapper(typeof(CatalogVMMappingProfile));
+
+            //fluentValidation
+            services.AddTransient<IValidator<AddNewCatalogItemDto>, AddNewCatalogItemDtoValidator>();
 
         }
 
