@@ -112,3 +112,9 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pag
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogType\Index.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Humanizer.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\FluentValidation.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\RestSharp.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Admin.EndPoint.MvcApplicationPartsAssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogItems\Create.cshtml.g.cs

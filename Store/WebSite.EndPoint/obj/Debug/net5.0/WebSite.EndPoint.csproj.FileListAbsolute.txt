@@ -113,3 +113,8 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Common.
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Components\GetMenuCategories\GetMenuCategories.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\FluentValidation.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\RestSharp.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\WebSite.EndPoint.MvcApplicationPartsAssemblyInfo.cs

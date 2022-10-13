@@ -33,6 +33,7 @@ namespace Admin.EndPoint.Pages.CatalogItems
 
         [BindProperty]
         public AddNewCatalogItemDto Data { get; set; }
+
         [BindProperty]
         public List<IFormFile> Files { get; set; }
 
