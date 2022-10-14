@@ -40,7 +40,12 @@
       "ProjectGuid": "3ccb50db-f91f-46be-b205-e4875dcf105e",
       "DisplayName": "Common",
       "ColorIndex": 6
+    },
+    "43989880-4416-46df-8a43-92fde69c9588": {
+      "ProjectGuid": "43989880-4416-46df-8a43-92fde69c9588",
+      "DisplayName": "StaticFile.EndPoint",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }

@@ -6,6 +6,7 @@ using Application.Interfaces.Contexts;
 using Application.Visitors.GetTodayReport;
 using Application.Visitors.VisitorOnline;
 using FluentValidation;
+using Infrastructure.ExternalApi.ImageServer;
 using Infrastructure.MappingProfile;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -42,6 +43,7 @@ namespace Admin.EndPoint
             services.AddTransient<ICatalogTypeService, CatalogTypeService>();
             services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
             services.AddTransient<ICatalogItemService, CatalogItemService>();
+            services.AddTransient<IImageUploadService, ImageUploadService>();
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
