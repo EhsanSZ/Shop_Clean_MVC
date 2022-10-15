@@ -18,6 +18,7 @@ using Application.Catalogs.GetMenuItem;
 using Infrastructure.MappingProfile;
 using Application.Catalogs.CatalogItems.GetCatalogIItemPLP;
 using Application.Catalogs.CatalogItems.UriComposer;
+using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
 
 namespace WebSite.EndPoint
 {
@@ -59,6 +60,7 @@ namespace WebSite.EndPoint
             services.AddTransient<IGetMenuItemService, GetMenuItemService>();
             services.AddTransient<IGetCatalogIItemPLPService, GetCatalogIItemPLPService>();
             services.AddTransient<IUriComposerService, UriComposerService>();
+            services.AddTransient<IGetCatalogItemPDPService, GetCatalogItemPDPService>();
             services.AddScoped<SaveVisitorFilter>();
 
 

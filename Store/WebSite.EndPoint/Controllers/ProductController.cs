@@ -11,10 +11,13 @@ namespace WebSite.EndPoint.Controllers
     public class ProductController : Controller
     {
         private readonly IGetCatalogIItemPLPService getCatalogIItemPLPService;
+        private readonly IGetCatalogItemPDPService getCatalogItemPDPService;
 
-        public ProductController(IGetCatalogIItemPLPService getCatalogIItemPLPService)
+        public ProductController(IGetCatalogIItemPLPService getCatalogIItemPLPService
+            , IGetCatalogItemPDPService getCatalogItemPDPService)
         {
             this.getCatalogIItemPLPService = getCatalogIItemPLPService;
+            this.getCatalogItemPDPService = getCatalogItemPDPService;
         }
         public IActionResult Index(int page = 1, int pageSize = 20)
         {
@@ -22,6 +25,15 @@ namespace WebSite.EndPoint.Controllers
             return View(data);
         }
 
+        public IActionResult Details(int Id)
+        {
+            var data = getCatalogItemPDPService.Execute(Id);
+            return View(data);
+        }
+
+
     }
 }
+
+
 
