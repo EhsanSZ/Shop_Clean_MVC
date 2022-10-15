@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Catalogs.CatalohItems.AddNewCatalogItem
+namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
 {
     public interface IAddNewCatalogItemService
     {

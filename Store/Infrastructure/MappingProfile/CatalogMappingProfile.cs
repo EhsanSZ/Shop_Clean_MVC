@@ -1,6 +1,6 @@
 ﻿using Application.Catalogs.CatalogTypes;
-using Application.Catalogs.CatalohItems.AddNewCatalogItem;
-using Application.Catalogs.CatalohItems.CatalogItemServices;
+using Application.Catalogs.CatalogItems.AddNewCatalogItem;
+using Application.Catalogs.CatalogItems.CatalogItemServices;
 using Application.Catalogs.GetMenuItem;
 using AutoMapper;
 using Domain.Catalogs;

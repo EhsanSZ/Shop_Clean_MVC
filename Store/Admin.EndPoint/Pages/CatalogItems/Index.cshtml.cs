@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Application.Catalogs.CatalohItems.CatalogItemServices;
+using Application.Catalogs.CatalogItems.CatalogItemServices;
 using Application.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -21,7 +21,7 @@ namespace Admin.EndPoint.Pages.CatalogItems
 
         public void OnGet(int page = 1, int pageSize = 100)
         {
-            //CatalogItems = catalogItemService.GetCatalogList(page, pageSize);
+            CatalogItems = catalogItemService.GetCatalogList(page, pageSize);
         }
     }
 }

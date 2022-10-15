@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using System.Collections.Generic;
 
-namespace Application.Catalogs.CatalohItems.AddNewCatalogItem
+namespace Application.Catalogs.CatalogItems.AddNewCatalogItem
 {
     public class AddNewCatalogItemDto
     {

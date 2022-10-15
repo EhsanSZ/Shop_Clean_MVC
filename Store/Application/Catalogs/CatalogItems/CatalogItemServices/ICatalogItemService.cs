@@ -9,13 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Catalogs.CatalohItems.CatalogItemServices
+namespace Application.Catalogs.CatalogItems.CatalogItemServices
 {
     public interface ICatalogItemService
     {
         List<CatalogBrandDto> GetBrand();
         List<ListCatalogTypeDto> GetCatalogType();
+        PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);
     }
+
     public class CatalogItemService : ICatalogItemService
     {
 
