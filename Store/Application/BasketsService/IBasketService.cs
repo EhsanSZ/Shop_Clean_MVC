@@ -13,6 +13,9 @@ namespace Application.BasketsService
     public interface IBasketService
     {
         BasketDto GetOrCreateBasketForUser(string BuyerId);
+        void AddItemToBasket(int basketId, int catalogItemId, int quantity = 1);
+        bool RemoveItemFromBasket(int ItemId);
+        bool SetQuantities(int itemId, int quantity);
     }
     public class BasketService : IBasketService
     {
