@@ -120,3 +120,4 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\RestSha
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\WebSite.EndPoint.MvcApplicationPartsAssemblyInfo.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Basket\Index.cshtml.g.cs

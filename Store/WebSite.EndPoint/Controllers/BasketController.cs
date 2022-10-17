@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebSite.EndPoint.Utilities;
 
 namespace WebSite.EndPoint.Controllers
 {
@@ -55,7 +56,8 @@ namespace WebSite.EndPoint.Controllers
         {
             if (signInManager.IsSignedIn(User))
             {
-                return basketService.GetOrCreateBasketForUser(User.Identity.Name);
+                userId = ClaimUtility.GetUserId(User);
+                return basketService.GetOrCreateBasketForUser(userId);
             }
             else
             {
@@ -81,4 +83,3 @@ namespace WebSite.EndPoint.Controllers
         }
     }
 }
-
