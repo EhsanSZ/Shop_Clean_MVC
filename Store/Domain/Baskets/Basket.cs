@@ -59,6 +59,11 @@ namespace Domain.Baskets
         {
             Quantity += quantity;
         }
+
+        public void SetQuantity(int quantity)
+        {
+            Quantity = quantity;
+        }
     }
 }
 

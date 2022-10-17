@@ -25,6 +25,7 @@ namespace Application.BasketsService
             this.context = context;
             this.uriComposerService = uriComposerService;
         }
+
         public BasketDto GetOrCreateBasketForUser(string BuyerId)
         {
             var basket = context.Baskets
@@ -67,6 +68,34 @@ namespace Application.BasketsService
                 BuyerId = basket.BuyerId,
                 Id = basket.Id,
             };
+        }
+
+        public void AddItemToBasket(int basketId, int catalogItemId, int quantity = 1)
+        {
+            var basket = context.Baskets.FirstOrDefault(p => p.Id == basketId);
+            if (basket == null)
+                throw new Exception("");
+
+            var catalog = context.CatalogItems.Find(catalogItemId);
+            basket.AddItem(catalogItemId, quantity, catalog.Price);
+
+            context.SaveChanges();
+        }
+
+        public bool RemoveItemFromBasket(int ItemId)
+        {
+            var item = context.BasketItems.SingleOrDefault(p => p.Id == ItemId);
+            context.BasketItems.Remove(item);
+            context.SaveChanges();
+            return true;
+        }
+
+        public bool SetQuantities(int itemId, int quantity)
+        {
+            var item = context.BasketItems.SingleOrDefault(p => p.Id == itemId);
+            item.SetQuantity(quantity);
+            context.SaveChanges();
+            return true;
         }
     }
 
