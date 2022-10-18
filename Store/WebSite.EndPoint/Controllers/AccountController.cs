@@ -1,19 +1,30 @@
-﻿using Domain.Users;
+﻿using Application.BasketsService;
+using Domain.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using WebSite.EndPoint.Models.ViewModels.Register;
 using WebSite.EndPoint.Models.ViewModels.User;
+using WebSite.EndPoint.Utilities.Filters;
 
 namespace WebSite.EndPoint.Controllers
 {
+    [ServiceFilter(typeof(SaveVisitorFilter))]
     public class AccountController : Controller
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly IBasketService basketService;
+
+        public AccountController(UserManager<User> userManager,
+            SignInManager<User> signInManager, IBasketService basketService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            this.basketService = basketService;
         }
 
         public IActionResult Register()
@@ -25,8 +36,9 @@ namespace WebSite.EndPoint.Controllers
         public IActionResult Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
+            {
                 return View(model);
-
+            }
             User newUser = new User()
             {
                 Email = model.Email,
@@ -37,7 +49,12 @@ namespace WebSite.EndPoint.Controllers
 
             var result = _userManager.CreateAsync(newUser, model.Password).Result;
             if (result.Succeeded)
+            {
+                var user = _userManager.FindByNameAsync(newUser.Email).Result;
+                TransferBasketForuser(user.Id);
+                _signInManager.SignInAsync(user, true).Wait();
                 return RedirectToAction(nameof(Profile));
+            }
 
             foreach (var item in result.Errors)
             {
@@ -63,8 +80,9 @@ namespace WebSite.EndPoint.Controllers
         public IActionResult Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
+            {
                 return View(model);
-
+            }
             var user = _userManager.FindByNameAsync(model.Email).Result;
             if (user == null)
             {
@@ -76,8 +94,10 @@ namespace WebSite.EndPoint.Controllers
                 , model.IsPersistent, true).Result;
 
             if (result.Succeeded)
-                return Redirect(model.ReturnUrl);
-
+            {
+                TransferBasketForuser(user.Id);
+                return Redirect(model?.ReturnUrl ?? "/");
+            }
             if (result.RequiresTwoFactor)
             {
                 //
@@ -90,6 +110,17 @@ namespace WebSite.EndPoint.Controllers
         {
             _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
+        }
+
+        private void TransferBasketForuser(string userId)
+        {
+            string cookieName = "BasketId";
+            if (Request.Cookies.ContainsKey(cookieName))
+            {
+                var anonymousId = Request.Cookies[cookieName];
+                basketService.TransferBasket(anonymousId, userId);
+                Response.Cookies.Delete(cookieName);
+            }
         }
     }
 }
