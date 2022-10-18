@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,10 +20,9 @@ namespace Infrastructure.ExternalApi.ImageServer
     {
         public List<string> Upload(List<IFormFile> files)
         {
-            var client = new RestClient("https://localhost:44327/api/Images?apikey=mysecretkey");
-            //client.Timeout = -1;
-            var request = new RestRequest(/*Method.Post*/);
-            //request.Method = Method.Post;
+            var client = new RestClient("https://localhost:44321/api/Images?apikey=mysecretkey");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.POST);
             foreach (var item in files)
             {
                 byte[] bytes;
@@ -33,12 +34,9 @@ namespace Infrastructure.ExternalApi.ImageServer
                 request.AddFile(item.FileName, bytes, item.FileName, item.ContentType);
             }
 
-
-            //IRestResponse response = client.Execute(request);
-            //UploadDto upload = JsonConvert.DeserializeObject<UploadDto>(response.Content);
-            //return upload.FileNameAddress;
-            return null;
-
+            IRestResponse response = client.Execute(request);
+            UploadDto upload = JsonConvert.DeserializeObject<UploadDto>(response.Content);
+            return upload.FileNameAddress;
             
         }
     }

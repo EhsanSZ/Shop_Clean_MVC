@@ -16,12 +16,13 @@ namespace WebSite.EndPoint.Controllers
         private readonly IBasketService basketService;
         private readonly SignInManager<User> signInManager;
         private string userId = null;
-        public BasketController(IBasketService basketService
-            , SignInManager<User> signInManager)
+
+        public BasketController(IBasketService basketService, SignInManager<User> signInManager)
         {
             this.basketService = basketService;
             this.signInManager = signInManager;
         }
+
         public IActionResult Index()
         {
             var data = GetOrSetBasket();
@@ -78,7 +79,6 @@ namespace WebSite.EndPoint.Controllers
             var cookieOptions = new CookieOptions { IsEssential = true };
             cookieOptions.Expires = DateTime.Today.AddYears(2);
             Response.Cookies.Append(basketCookieName, userId, cookieOptions);
-
 
         }
     }

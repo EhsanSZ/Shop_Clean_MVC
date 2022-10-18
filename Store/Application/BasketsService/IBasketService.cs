@@ -16,6 +16,7 @@ namespace Application.BasketsService
         void AddItemToBasket(int basketId, int catalogItemId, int quantity = 1);
         bool RemoveItemFromBasket(int ItemId);
         bool SetQuantities(int itemId, int quantity);
+        BasketDto GetBasketForUser(string UserId);
     }
     public class BasketService : IBasketService
     {
@@ -39,8 +40,7 @@ namespace Application.BasketsService
 
             if (basket == null)
             {
-                //سبد خرید را ایجاد کنید
-               return CreateBasketForUser(BuyerId);
+                return CreateBasketForUser(BuyerId);
             }
             return new BasketDto
             {
@@ -59,6 +59,35 @@ namespace Application.BasketsService
                 }).ToList(),
             };
 
+        }
+
+        public BasketDto GetBasketForUser(string UserId)
+        {
+            var basket = context.Baskets
+              .Include(p => p.Items)
+              .ThenInclude(p => p.CatalogItem)
+              .ThenInclude(p => p.CatalogItemImages)
+              .SingleOrDefault(p => p.BuyerId == UserId);
+            if (basket == null)
+            {
+                return null;
+            }
+            return new BasketDto
+            {
+                Id = basket.Id,
+                BuyerId = basket.BuyerId,
+                Items = basket.Items.Select(item => new BasketItemDto
+                {
+                    CatalogItemid = item.CatalogItemId,
+                    Id = item.Id,
+                    CatalogName = item.CatalogItem.Name,
+                    Quantity = item.Quantity,
+                    UnitPrice = item.UnitPrice,
+                    ImageUrl = uriComposerService.ComposeImageUri(item?.CatalogItem?
+                     .CatalogItemImages?.FirstOrDefault()?.Src ?? ""),
+
+                }).ToList(),
+            };
         }
 
         private BasketDto CreateBasketForUser(string BuyerId)
@@ -100,6 +129,7 @@ namespace Application.BasketsService
             context.SaveChanges();
             return true;
         }
+
     }
 
     public class BasketDto
@@ -107,6 +137,15 @@ namespace Application.BasketsService
         public int Id { get; set; }
         public string BuyerId { get; set; }
         public List<BasketItemDto> Items { get; set; } = new List<BasketItemDto>();
+
+        public int Total()
+        {
+            if (Items.Count > 0)
+            {
+                return Items.Sum(p => p.UnitPrice * p.Quantity);
+            }
+            return 0;
+        }
 
     }
 

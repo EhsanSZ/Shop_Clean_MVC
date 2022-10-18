@@ -15,7 +15,15 @@ namespace Application.Catalogs.CatalogItems.UriComposer
     {
         public string ComposeImageUri(string src)
         {
-            return "https://localhost:44327/" + src.Replace("\\", "//"); 
+            if (!string.IsNullOrWhiteSpace(src))
+            {
+                return "https://localhost:44321/" + src.Replace("\\", "//");
+            }
+            else
+            {
+                return "";
+            }
+            
         }
     }
 }

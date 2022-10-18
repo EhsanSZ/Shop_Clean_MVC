@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]  - فروشگاه آنلاین </title>
+    <title>@ViewData["Title"]  - فروشگاه</title>
     <!-- font-awesome -->
      <link rel="stylesheet" href="~/Theme/assets/css/font-awesome.min.css">
     <!-- Bootstrap 4.5.3 -->
@@ -88,96 +88,11 @@
                                 <span class="bag-items-number">3</span>
                             </a>
                         </div>
-                        <div class="user-item cart-list">
-                            <a href="#">
-                                <i class="fal fa-shopping-basket"></i>
-                                <span class="bag-items-number">2</span>
-                            </a>
-                            <ul>
-                                <li class="cart-items">
-                                    <ul class="do-nice-scroll">
-                                        <li class="cart-item">
-                                            <span class="d-flex align-items-center mb-2">
-                                                <a href="#">
-                                                    <img src="~/Theme/assets/images/cart/item-1.jpg" alt="">
-                                                </a>
-                                                <span>
-                                                    <a href="#">
-                                                        <span class="title-item">
-                                                            گوشی موبایل شیائومی مدل Redmi 9 ظرفیت 32 گیگابایت
-                                                        </span>
-                                                    </a>
-                                                    <span class="color d-flex align-items-center">
-                                                        رنگ:
-                                                        <span style="background-color: #8a2be2;"></span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span class="price">4,050,000 تومان</span>
-                                            <button class="remove-item">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </li>
-                                        <li class="cart-item">
-                                            <span class="d-flex align-items-center mb-2">
-                                                <a href="#">
-                                                    <img src="~/Theme/assets/images/cart/item-2.jpg" alt="">
-                                                </a>
-                                                <span>
-                                                    <a href="#">
-                                                        <span class="title-item">
-                                                            ساعت مچی هوشمند Haylou LS02
-                                                        </span>
-                                                    </a>
-                                                    <span class="color d-flex align-items-center">
-                                                        رنگ:
-                                                        <span style="background-color: #000;"></span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span class="price">750,000 تومان</span>
-                                            <button class="remove-item">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </li>
-                                        <li class="cart-item">
-                                            <span class="d-flex align-items-center mb-2">
-                                                <a href="#">
-                                                    <img src="~/Theme/assets/images/cart/item-3.jpg" alt="">
-                                                </a>
-                                                <span>
-                                                    <a href="#">
-                                                        <span class="title-item">
-                                                            هدفون بلوتوثی کیو سی وای مدل T7
-                                                        </span>
-                                                    </a>
-                                                    <span class="color d-flex align-items-center">
-                                                        رنگ:
-                                                        <span style="background-color: #fff;"></span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <span class="price">635,000 تومان</span>
-                                            <button class="remove-item">
-                                                <i class="far fa-trash-alt"></i>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="cart-footer">
-                                    <span class="d-block text-center mb-3">
-                                        مبلغ کل:
-                                        <span class="total">4,050,000 تومان</span>
-                                    </span>
-                                    <span class="d-block text-center px-2">
-                                        <a href="#" class="btn-cart">
-                                            مشاهده سبد خرید
-                                            <i class="mi mi-ShoppingCart"></i>
-                                        </a>
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
+
+
+                        @await Component.InvokeAsync("BasketComponent")
+
+
                         <div class="user-item account">
 
                             <a href="#">
@@ -291,7 +206,7 @@
                                                 <li>
                                                     <a href="#" class="text-sm text-muted">
                                                         <i class="fad fa-gift-card"></i> کارت
-                                                        هدیه خرید از همتا
+                                                        هدیه خرید از  باگتو 
                                                     </a>
                                                 </li>
                                                 <li>
@@ -312,13 +227,13 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#"><i class="fal fa-shield-check text-success"></i>همتای من</a>
+                            <a href="#"><i class="fal fa-shield-check text-success"></i> باگتو ی من</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fal fa-plus-square text-primary"></i>همتا پلاس</a>
+                            <a href="#"><i class="fal fa-plus-square text-primary"></i> باگتو  پلاس</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fal fa-coin text-secondary"></i>همتا کلاب</a>
+                            <a href="#"><i class="fal fa-coin text-secondary"></i> باگتو  کلاب</a>
                         </li>
                         <li>
                             <a href="#"><i></i>سوال دارید؟</a>
@@ -718,7 +633,7 @@
                     </div>
                     <div class="col-md-4 col-sm-6">
                         <div class="widget widget-links">
-                            <h2 class="widget-title">راهنمای خرید از همتا</h2>
+                            <h2 class="widget-title">راهنمای خرید از  باگتو </h2>
                             <ul class="widget-list">
                                 <li class="widget-list-item">
                                     <a href="#" class="widget-list-link">نحوه ثبت سفارش</a>
@@ -766,7 +681,7 @@
                         </div>
                         <div class="widget">
                             <h2 class="widget-title">
-                                همتا را در شبکه‌های اجتماعی دنبال کنید:
+                                 باگتو  را در شبکه‌های اجتماعی دنبال کنید:
                             </h2>
                             <div class="social">
                                 <ul>
@@ -826,16 +741,16 @@
                         <div class="widget widget-links mb-2">
                             <ul class="widget-list d-flex flex-wrap justify-content-center justify-content-md-start">
                                 <li class="widget-list-item ml-4">
-                                    <a href="#" class="widget-list-link">درباره همتا</a>
+                                    <a href="#" class="widget-list-link">درباره  باگتو </a>
                                 </li>
                                 <li class="widget-list-item ml-4">
-                                    <a href="#" class="widget-list-link">فروش در همتا</a>
+                                    <a href="#" class="widget-list-link">فروش در  باگتو </a>
                                 </li>
                                 <li class="widget-list-item ml-4">
                                     <a href="#" class="widget-list-link">فرصت های شغلی</a>
                                 </li>
                                 <li class="widget-list-item ml-4">
-                                    <a href="#" class="widget-list-link">تماس با همتا</a>
+                                    <a href="#" class="widget-list-link">تماس با  باگتو </a>
                                 </li>
                                 <li class="widget-list-item ml-4">
                                     <a href="#" class="widget-list-link">حریم خصوصی</a>
@@ -847,7 +762,7 @@
                 <div class="row text-center">
                     <div class="col-12">
                         <div class="copy-right" dir="ltr">
-                            <p></p>
+                            <p>© All rights reserved. Bugeto.Net</p>
                         </div>
                     </div>
                 </div>
