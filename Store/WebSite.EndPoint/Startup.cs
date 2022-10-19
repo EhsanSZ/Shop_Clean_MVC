@@ -70,6 +70,7 @@ namespace WebSite.EndPoint
 
             //mapper
             services.AddAutoMapper(typeof(CatalogMappingProfile));
+            services.AddAutoMapper(typeof(UserMappingProfile));
 
         }
 
