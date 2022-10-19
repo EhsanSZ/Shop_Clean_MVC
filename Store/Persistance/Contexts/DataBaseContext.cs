@@ -2,6 +2,7 @@
 using Domain.Attributes;
 using Domain.Baskets;
 using Domain.Catalogs;
+using Domain.Users;
 using Microsoft.EntityFrameworkCore;
 using Persistence.EntityConfigurations;
 using Persistence.Seeds;
@@ -22,7 +23,7 @@ namespace Persistence.Contexts
         public DbSet<CatalogItem> CatalogItems { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
-
+        public DbSet<UserAddress> userAddresses { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
 
