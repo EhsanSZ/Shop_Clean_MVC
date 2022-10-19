@@ -20,6 +20,7 @@ using Application.Catalogs.CatalogItems.GetCatalogIItemPLP;
 using Application.Catalogs.CatalogItems.UriComposer;
 using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
 using Application.BasketsService;
+using Application.Users;
 
 namespace WebSite.EndPoint
 {
@@ -63,6 +64,8 @@ namespace WebSite.EndPoint
             services.AddTransient<IUriComposerService, UriComposerService>();
             services.AddTransient<IGetCatalogItemPDPService, GetCatalogItemPDPService>();
             services.AddTransient<IBasketService, BasketService>();
+            services.AddTransient<IUserAddressService, UserAddressService>();
+
             services.AddScoped<SaveVisitorFilter>();
 
 
@@ -99,8 +102,13 @@ namespace WebSite.EndPoint
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
                 endpoints.MapHub<OnlineVisitorHub>("/chathub");
             });
         }
