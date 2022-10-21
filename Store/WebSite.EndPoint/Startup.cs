@@ -21,6 +21,7 @@ using Application.Catalogs.CatalogItems.UriComposer;
 using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
 using Application.BasketsService;
 using Application.Users;
+using Application.Orders;
 
 namespace WebSite.EndPoint
 {
@@ -65,6 +66,7 @@ namespace WebSite.EndPoint
             services.AddTransient<IGetCatalogItemPDPService, GetCatalogItemPDPService>();
             services.AddTransient<IBasketService, BasketService>();
             services.AddTransient<IUserAddressService, UserAddressService>();
+            services.AddTransient<IOrderService, OrderService>();
 
             services.AddScoped<SaveVisitorFilter>();
 
