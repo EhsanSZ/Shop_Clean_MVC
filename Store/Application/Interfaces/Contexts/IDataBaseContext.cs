@@ -1,5 +1,6 @@
 ﻿using Domain.Baskets;
 using Domain.Catalogs;
+using Domain.Order;
 using Domain.Users;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
@@ -15,6 +16,9 @@ namespace Application.Interfaces.Contexts
         DbSet<Basket> Baskets { get; set; }
         DbSet<BasketItem> BasketItems { get; set; }
         DbSet<UserAddress> UserAddresses { get; set; }
+        DbSet<Order> Orders { get; set; }
+        DbSet<OrderItem> OrderItems { get; set; }
+
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
 
