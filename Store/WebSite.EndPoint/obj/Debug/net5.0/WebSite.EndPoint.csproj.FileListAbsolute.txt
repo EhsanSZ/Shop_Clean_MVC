@@ -200,3 +200,4 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\A
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Areas\Customer\Views\Address\Index.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Areas\Customer\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Areas\Customer\Views\_ViewImports.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Basket\ShippingPayment.cshtml.g.cs
