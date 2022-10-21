@@ -1,6 +1,7 @@
 ﻿using Domain.Baskets;
 using Domain.Catalogs;
 using Domain.Order;
+using Domain.Payments;
 using Domain.Users;
 using Microsoft.EntityFrameworkCore;
 using System.Threading;
@@ -18,6 +19,7 @@ namespace Application.Interfaces.Contexts
         DbSet<UserAddress> UserAddresses { get; set; }
         DbSet<Order> Orders { get; set; }
         DbSet<OrderItem> OrderItems { get; set; }
+        DbSet<Payment> Payments { get; set; }
 
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
