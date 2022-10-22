@@ -57,6 +57,7 @@ namespace WebSite.EndPoint
             #endregion
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
+            services.AddTransient<IIdentityDatabaseContext, IdentityDatabaseContext>();
             services.AddTransient<IDataBaseContext, DataBaseContext>();
 
             services.AddTransient<ISaveVisitorInfoService, SaveVisitorInfoService>();

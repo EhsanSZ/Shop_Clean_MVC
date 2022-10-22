@@ -60,8 +60,7 @@ namespace WebSite.EndPoint.Controllers
                 Email = payment.Email,
                 MerchantId = merchendId,
                 Mobile = payment.PhoneNumber,
-            }, Payment.Mode.zarinpal
-                );
+            }, Payment.Mode.zarinpal );
 
             return Redirect($"https://zarinpal.com/pg/StartPay/{resultZarinpalRequest.Authority}");
         }
@@ -71,27 +70,18 @@ namespace WebSite.EndPoint.Controllers
         {
             string Status = HttpContext.Request.Query["Status"];
 
-            if (Status != "" && Status.ToString().ToLower() == "ok"
-                && Authority != "")
+            if (Status != "" && Status.ToString().ToLower() == "ok" && Authority != "")
             {
                 var payment = paymentService.GetPayment(Id);
                 if (payment == null)
-                {
                     return NotFound();
-                }
-
-                //var verification = _payment.Verification(new DtoVerification
-                //{
-                //    Amount = payment.Amount,
-                //    Authority = Authority,
-                //    MerchantId = merchendId,
-                //}, Payment.Mode.zarinpal).Result;
 
                 var client = new RestClient("https://www.zarinpal.com/pg/rest/WebGate/PaymentVerification.json");
                 client.Timeout = -1;
                 var request = new RestRequest(Method.POST);
                 request.AddHeader("Content-Type", "application/json");
-                request.AddParameter("application/json", $"{{\"MerchantID\" :\"{merchendId}\",\"Authority\":\"{Authority}\",\"Amount\":\"{payment.Amount}\"}}", ParameterType.RequestBody);
+                request.AddParameter("application/json", $"{{\"MerchantID\" :\"{merchendId}\",\"Authority\"" +
+                    $":\"{Authority}\",\"Amount\":\"{payment.Amount}\"}}", ParameterType.RequestBody);
                 var response = client.Execute(request);
 
                 VerificationPayResultDto verification =
