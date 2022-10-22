@@ -59,9 +59,7 @@ namespace Application.Payments
 
         public PaymentOfOrderDto PayForOrder(int OrderId)
         {
-            var order = context.Orders
-                    .Include(p => p.OrderItems)
-                    .SingleOrDefault(p => p.Id == OrderId);
+            var order = context.Orders.Include(p => p.OrderItems).SingleOrDefault(p => p.Id == OrderId);
             if (order == null)
                 throw new Exception("");
             var payment = context.Payments.SingleOrDefault(p => p.OrderId == order.Id);
@@ -80,14 +78,11 @@ namespace Application.Payments
                 PaymentMethod = order.PaymentMethod,
             };
 
-
         }
 
         public bool VerifyPayment(Guid Id, string Authority, long RefId)
         {
-            var payment = context.Payments
-       .Include(p => p.Order)
-       .SingleOrDefault(p => p.Id == Id);
+            var payment = context.Payments.Include(p => p.Order).SingleOrDefault(p => p.Id == Id);
 
             if (payment == null)
                 throw new Exception("payment not found");

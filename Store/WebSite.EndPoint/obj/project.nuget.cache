@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GTJmegQBaZFIHdsWvc39EDT0ftWsNqKOk+J5m1ceLxsRP2AJ4C15O7/Y2OByGymu8QHgAfA+wi2ss9QLozoSlQ==",
+  "dgSpecHash": "alWDq2bRJlkCFNDvILEs4GzZYG/lFEmMEThrR2U9pT2qvlz6cDFiFKPG+bsv6vRKkj1FLATI65vqqrDKSiluBw==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\WebSite.EndPoint\\WebSite.EndPoint.csproj",
   "expectedPackageFiles": [
@@ -166,7 +166,8 @@
     "C:\\Users\\Ehsan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Ehsan\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512"
+    "C:\\Users\\Ehsan\\.nuget\\packages\\uaparser\\3.1.47\\uaparser.3.1.47.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\zarinpal\\3.0.1\\zarinpal.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -433,6 +433,10 @@
             "UAParser": {
               "target": "Package",
               "version": "[3.1.47, )"
+            },
+            "Zarinpal": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [
