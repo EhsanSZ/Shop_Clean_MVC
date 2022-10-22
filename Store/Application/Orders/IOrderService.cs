@@ -4,10 +4,8 @@ using AutoMapper;
 using Domain.Order;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Application.Orders
 {
@@ -23,9 +21,7 @@ namespace Application.Orders
         private readonly IMapper mapper;
         private readonly IUriComposerService uriComposerService;
 
-        public OrderService(IDataBaseContext context
-            , IMapper mapper
-            , IUriComposerService uriComposerService)
+        public OrderService(IDataBaseContext context, IMapper mapper, IUriComposerService uriComposerService)
         {
             this.context = context;
             this.mapper = mapper;
@@ -48,10 +44,8 @@ namespace Application.Orders
            {
                var catalogItem = catalogItems.First(c => c.Id == basketItem.CatalogItemId);
 
-               var orderitem = new OrderItem(catalogItem.Id,
-                   catalogItem.Name,
-                   uriComposerService
-                   .ComposeImageUri
+               var orderitem = new OrderItem(catalogItem.Id,catalogItem.Name,
+                   uriComposerService.ComposeImageUri
                    (catalogItem?.CatalogItemImages?.FirstOrDefault()?.Src ?? ""),
                    catalogItem.Price, basketItem.Quantity);
                return orderitem;

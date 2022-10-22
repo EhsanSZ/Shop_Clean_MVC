@@ -22,6 +22,7 @@ using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
 using Application.BasketsService;
 using Application.Users;
 using Application.Orders;
+using Application.Payments;
 
 namespace WebSite.EndPoint
 {
@@ -67,6 +68,7 @@ namespace WebSite.EndPoint
             services.AddTransient<IBasketService, BasketService>();
             services.AddTransient<IUserAddressService, UserAddressService>();
             services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IPaymentService, PaymentService>();
 
             services.AddScoped<SaveVisitorFilter>();
 

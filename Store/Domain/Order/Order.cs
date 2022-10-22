@@ -16,6 +16,7 @@ namespace Domain.Order
         public PaymentMethod PaymentMethod { get; private set; }
         public PaymentStatus PaymentStatus { get; private set; }
         public OrderStatus OrderStatus { get; private set; }
+
         private readonly List<OrderItem> _orderItems = new List<OrderItem>();
         public IReadOnlyCollection<OrderItem> OrderItems => _orderItems.AsReadOnly();
 
@@ -27,7 +28,7 @@ namespace Domain.Order
             PaymentMethod = paymentMethod;
         }
 
-        public Order()
+        protected Order()
         {
 
         }
@@ -95,8 +96,7 @@ namespace Domain.Order
         }
 
 
-        //ef core
-        public OrderItem()
+        protected OrderItem()
         {
 
         }
