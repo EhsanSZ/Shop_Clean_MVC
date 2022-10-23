@@ -21,6 +21,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Discounts.AddNewDiscountServices;
 
 namespace Admin.EndPoint
 {
@@ -44,6 +45,7 @@ namespace Admin.EndPoint
             services.AddTransient<IAddNewCatalogItemService, AddNewCatalogItemService>();
             services.AddTransient<ICatalogItemService, CatalogItemService>();
             services.AddTransient<IImageUploadService, ImageUploadService>();
+            services.AddTransient<IAddNewDiscountService, AddNewDiscountService>();
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
