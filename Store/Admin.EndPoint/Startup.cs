@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Discounts.AddNewDiscountServices;
+using Application.Discounts;
 
 namespace Admin.EndPoint
 {
@@ -38,6 +39,7 @@ namespace Admin.EndPoint
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllers();
 
             services.AddScoped<IGetTodayReportService, GetTodayReportService>(); 
             services.AddTransient<IVisitorOnlineService, VisitorOnlineService>();
@@ -46,6 +48,7 @@ namespace Admin.EndPoint
             services.AddTransient<ICatalogItemService, CatalogItemService>();
             services.AddTransient<IImageUploadService, ImageUploadService>();
             services.AddTransient<IAddNewDiscountService, AddNewDiscountService>();
+            services.AddTransient<IDiscountService, DiscountService>();
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
@@ -88,6 +91,7 @@ namespace Admin.EndPoint
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
