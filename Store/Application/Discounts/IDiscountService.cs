@@ -1,4 +1,7 @@
-﻿using Application.Interfaces.Contexts;
+﻿using Application.Dtos;
+using Application.Interfaces.Contexts;
+using Domain.Users;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +12,9 @@ namespace Application.Discounts
     public interface IDiscountService
     {
         List<CatlogItemDto> GetCatalogItems(string searchKey);
+        bool ApplyDiscountInBasket(string CoponCode, int BasketId);
+        bool RemoveDiscountFromBasket(int BasketId);
+        BaseDto IsDiscountValid(string couponCode, User user);
 
     }
 
@@ -20,6 +26,23 @@ namespace Application.Discounts
         public DiscountService(IDataBaseContext context)
         {
             this.context = context;
+        }
+
+        public bool ApplyDiscountInBasket(string CoponCode, int BasketId)
+        {
+
+           var basket = context.Baskets
+                .Include(p => p.Items)
+                .Include(p => p.AppliedDiscount)
+                .FirstOrDefault(p => p.Id == BasketId);
+
+
+            var discount = context.Discount.Where(p => p.CouponCode.Equals(CoponCode)).FirstOrDefault();
+
+            basket.ApplyDiscountCode(discount);
+            context.SaveChanges();
+            return true;
+
         }
 
         public List<CatlogItemDto> GetCatalogItems(string searchKey)
@@ -48,6 +71,20 @@ namespace Application.Discounts
                 return data;
             }
 
+        }
+
+        public BaseDto IsDiscountValid(string couponCode, User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool RemoveDiscountFromBasket(int BasketId)
+        {
+            var basket = context.Baskets.Find(BasketId);
+
+            basket.RemoveDescount();
+            context.SaveChanges();
+            return true;
         }
     }
 
