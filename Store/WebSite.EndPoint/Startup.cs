@@ -72,6 +72,7 @@ namespace WebSite.EndPoint
             services.AddTransient<IOrderService, OrderService>();
             services.AddTransient<IPaymentService, PaymentService>();
             services.AddTransient<IDiscountService, DiscountService>();
+            services.AddTransient<IDiscountHistoryService, DiscountHistoryService>();
 
             services.AddScoped<SaveVisitorFilter>();
 
