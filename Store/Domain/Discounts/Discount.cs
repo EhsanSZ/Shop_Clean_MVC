@@ -44,6 +44,17 @@ namespace Domain.Discounts
         }
         public int DiscountLimitationId { get; set; }
 
+        public int GetDiscountAmount(int amount)
+        {
+            var result = 0;
+
+            if (UsePercentage)
+                result = (((amount) * (DiscountPercentage)) / 100);
+            else
+                result = DiscountAmount;
+            return result;
+        }
+
     }
 
     public enum DiscountType

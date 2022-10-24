@@ -13,11 +13,7 @@ namespace Admin.EndPoint.Binders
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {
             if (bindingContext == null)
-            {
                 throw new ArgumentNullException(nameof(bindingContext));
-            }
-
-
 
             string FieldName = bindingContext.FieldName;
 
@@ -64,12 +60,10 @@ namespace Admin.EndPoint.Binders
 
             if (!string.IsNullOrEmpty(appliedToCatalogItem.Values))
             {
-                discountDto.appliedToCatalogItem =
-                bindingContext.ValueProvider
+                discountDto.appliedToCatalogItem =bindingContext.ValueProvider
                 .GetValue($"{FieldName}.{nameof(discountDto.appliedToCatalogItem)}")
                 .Values.ToString().Split(',').Select(x => Int32.Parse(x)).ToList();
             }
-
 
             bindingContext.Result = ModelBindingResult.Success(discountDto);
             return Task.CompletedTask;

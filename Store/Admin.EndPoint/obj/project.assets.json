@@ -86,6 +86,15 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "MD.PersianDateTime.Standard/2.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MD.PersianDateTime.Standard.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MD.PersianDateTime.Standard.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2310,6 +2319,20 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MD.PersianDateTime.Standard/2.4.0": {
+      "sha512": "NR9QBrc4iSHoJRVSxZ+7qW6yhFRDmo5JiyZdotbU1uvZisqFYbtL2es77NiQ/LdrHE4AL7wNTuJ82iLNR/80pQ==",
+      "type": "package",
+      "path": "md.persiandatetime.standard/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "PersianDateTimePng.png",
+        "lib/netstandard2.0/MD.PersianDateTime.Standard.dll",
+        "lib/netstandard2.0/MD.PersianDateTime.Standard.xml",
+        "md.persiandatetime.standard.2.4.0.nupkg.sha512",
+        "md.persiandatetime.standard.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
@@ -7200,6 +7223,7 @@
       "Application >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Infrastructure >= 1.0.0",
+      "MD.PersianDateTime.Standard >= 2.4.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
       "Persistance >= 1.0.0"
     ]
@@ -7256,6 +7280,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[12.0.0, )"
+          },
+          "MD.PersianDateTime.Standard": {
+            "target": "Package",
+            "version": "[2.4.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

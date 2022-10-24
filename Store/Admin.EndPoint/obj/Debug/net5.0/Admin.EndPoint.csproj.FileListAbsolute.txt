@@ -119,3 +119,5 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\RestSharp
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Admin.EndPoint.MvcApplicationPartsAssemblyInfo.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogItems\Create.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\CatalogItems\Index.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\MD.PersianDateTime.Standard.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\Discounts\Create.cshtml.g.cs
