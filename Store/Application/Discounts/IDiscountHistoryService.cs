@@ -54,7 +54,8 @@ namespace Application.Discounts
         }
 
 
-        public PaginatedItemsDto<DiscountUsageHistory> GetAllDiscountUsageHistory(int? discountId, string userId, int pageIndex, int pageSize)
+        public PaginatedItemsDto<DiscountUsageHistory> GetAllDiscountUsageHistory
+            (int? discountId, string userId, int pageIndex, int pageSize)
         {
             var query = context.DiscountUsageHistories.AsQueryable();
 
