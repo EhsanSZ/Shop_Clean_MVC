@@ -37,12 +37,16 @@ namespace Application.BasketsService
                 .Include(p => p.Items)
                 .ThenInclude(p => p.CatalogItem)
                 .ThenInclude(p => p.CatalogItemImages)
+
+                .Include(p => p.Items)
+                .ThenInclude(p => p.CatalogItem)
+                .ThenInclude(p => p.Discounts)
+
                 .SingleOrDefault(p => p.BuyerId == BuyerId);
 
             if (basket == null)
-            {
                 return CreateBasketForUser(BuyerId);
-            }
+
             return new BasketDto
             {
                 Id = basket.Id,
@@ -54,7 +58,7 @@ namespace Application.BasketsService
                     Id = item.Id,
                     CatalogName = item.CatalogItem.Name,
                     Quantity = item.Quantity,
-                    UnitPrice = item.UnitPrice,
+                    UnitPrice = item.CatalogItem.Price,
                     ImageUrl = uriComposerService.ComposeImageUri(item?.CatalogItem?
                      .CatalogItemImages?.FirstOrDefault()?.Src ?? ""),
 

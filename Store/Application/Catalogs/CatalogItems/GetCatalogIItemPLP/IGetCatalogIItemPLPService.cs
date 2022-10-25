@@ -21,8 +21,7 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
         private readonly IDataBaseContext context;
         private readonly IUriComposerService uriComposerService;
 
-        public GetCatalogIItemPLPService(IDataBaseContext context
-            , IUriComposerService uriComposerService)
+        public GetCatalogIItemPLPService(IDataBaseContext context ,IUriComposerService uriComposerService)
         {
             this.context = context;
             this.uriComposerService = uriComposerService;
@@ -31,9 +30,11 @@ namespace Application.Catalogs.CatalogItems.GetCatalogIItemPLP
         {
             int rowCount = 0;
             var data = context.CatalogItems
+                .Include(p => p.Discounts)
                 .Include(p => p.CatalogItemImages)
                 .OrderByDescending(p => p.Id)
                 .PagedResult(page, pageSize, out rowCount)
+                .ToList()
                 .Select(p => new CatalogPLPDto
                 {
                     Id = p.Id,

@@ -34,10 +34,10 @@ namespace Application.Discounts
         public bool ApplyDiscountInBasket(string CoponCode, int BasketId)
         {
 
-           var basket = context.Baskets
-                .Include(p => p.Items)
-                .Include(p => p.AppliedDiscount)
-                .FirstOrDefault(p => p.Id == BasketId);
+            var basket = context.Baskets
+                 .Include(p => p.Items)
+                 .Include(p => p.AppliedDiscount)
+                 .FirstOrDefault(p => p.Id == BasketId);
 
 
             var discount = context.Discount.Where(p => p.CouponCode.Equals(CoponCode)).FirstOrDefault();
@@ -64,7 +64,7 @@ namespace Application.Discounts
             else
             {
                 var data = context.CatalogItems
-                    .OrderByDescending(p=> p.Id)
+                    .OrderByDescending(p => p.Id)
                     .Take(10)
                     .Select(p => new CatlogItemDto
                     {
@@ -96,8 +96,7 @@ namespace Application.Discounts
             {
                 var startDate = DateTime.SpecifyKind(discount.StartDate.Value, DateTimeKind.Utc);
                 if (startDate.CompareTo(now) > 0)
-                    return new BaseDto(false, new List<string>
-                    { "هنوز زمان استفاده از این کد تخفیف فرا نرسیده است" });
+                    return new BaseDto(false, new List<string> { "هنوز زمان استفاده از این کد تخفیف فرا نرسیده است" });
             }
             if (discount.EndDate.HasValue)
             {
@@ -123,17 +122,12 @@ namespace Application.Discounts
                     }
                 case DiscountLimitationType.NTimesOnly:
                     {
-                        var totalUsage = discountHistoryService.GetAllDiscountUsageHistory(discount.Id, null, 0, 1).Data.Count();
+                        var totalUsage = discountHistoryService
+                            .GetAllDiscountUsageHistory(discount.Id, null, 0, 1).Data.Count();
                         if (totalUsage < discount.LimitationTimes)
-                        {
                             return new BaseDto(true, null);
-
-                        }
                         else
-                        {
                             return new BaseDto(false, new List<string> { "ظرفیت استفاده از این کد تخفیف تکمیل شده است" });
-
-                        }
                     }
                 case DiscountLimitationType.NTimesPerCustomer:
                     {
@@ -141,18 +135,12 @@ namespace Application.Discounts
                         {
                             var totalUsage = discountHistoryService.GetAllDiscountUsageHistory(discount.Id, user.Id, 0, 1).Data.Count();
                             if (totalUsage < discount.LimitationTimes)
-                            {
                                 return new BaseDto(true, null);
-                            }
                             else
-                            {
                                 return new BaseDto(false, new List<string> { "تعدادی که شما مجاز به استفاده از این تخفیف بوده اید به پایان رسیده است" });
-                            }
                         }
                         else
-                        {
                             return new BaseDto(true, null);
-                        }
                     }
                 default:
                     break;
