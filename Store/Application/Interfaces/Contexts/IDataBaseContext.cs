@@ -23,6 +23,7 @@ namespace Application.Interfaces.Contexts
         DbSet<Payment> Payments { get; set; }
         DbSet<Discount> Discount { get; set; }
         DbSet<DiscountUsageHistory> DiscountUsageHistories { get; set; }
+        DbSet<CatalogItemFavourite> CatalogItemFavourites { get; set; }
 
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);

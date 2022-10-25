@@ -2,6 +2,7 @@
 using Application.Interfaces.Contexts;
 using AutoMapper;
 using Common;
+using Domain.Catalogs;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
     {
         List<CatalogBrandDto> GetBrand();
         List<ListCatalogTypeDto> GetCatalogType();
+        void AddToMyFavourite(string UserId, int CatalogItemId);
         PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);
     }
 
@@ -80,6 +82,18 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
                     Type = $"{p?.Type ?? ""} - {p?.ParentCatalogType?.Type ?? ""} - {p?.ParentCatalogType?.ParentCatalogType?.Type ?? ""}"
                 }).ToList();
             return types;
+        }
+
+        public void AddToMyFavourite(string UserId, int CatalogItemId)
+        {
+            var catalogItem = context.CatalogItems.Find(CatalogItemId);
+            CatalogItemFavourite catalogItemFavourite = new CatalogItemFavourite
+            {
+                CatalogItem = catalogItem,
+                UserId = UserId,
+            };
+            context.CatalogItemFavourites.Add(catalogItemFavourite);
+            context.SaveChanges();
         }
     }
 

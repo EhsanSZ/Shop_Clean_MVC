@@ -1,4 +1,5 @@
 ﻿using Domain.Attributes;
+using Domain.Catalogs;
 using Domain.Discounts;
 using System;
 using System.Collections.Generic;
@@ -43,7 +44,29 @@ namespace Domain.Order
 
         }
 
+        public int TotalPrice()
+        {
+            int totalPrice = _orderItems.Sum(p => p.UnitPrice * p.Units);
+            totalPrice -= AppliedDiscount.GetDiscountAmount(totalPrice);
+            return totalPrice;
+        }
 
+        /// <summary>
+        /// دریافت مبلغ کل بدونه در نظر گرفتن کد تخفیف
+        /// </summary>
+        /// <returns></returns>
+        public int TotalPriceWithOutDiescount()
+        {
+            int totalPrice = _orderItems.Sum(p => p.UnitPrice * p.Units);
+            return totalPrice;
+        }
+
+        public void ApplyDiscountCode(Discount discount)
+        {
+            this.AppliedDiscount = discount;
+            this.AppliedDiscountId = discount.Id;
+            this.DiscountAmount = discount.GetDiscountAmount(TotalPrice());
+        }
 
         /// <summary>
         /// پرداخت انجام شد
@@ -79,30 +102,6 @@ namespace Domain.Order
             OrderStatus = OrderStatus.Cancelled;
         }
 
-        public int TotalPrice()
-        {
-            int totalPrice = _orderItems.Sum(p => p.UnitPrice * p.Units);
-            totalPrice -= AppliedDiscount.GetDiscountAmount(totalPrice);
-            return totalPrice;
-        }
-
-        /// <summary>
-        /// دریافت مبلغ کل بدونه در نظر گرفتن کد تخفیف
-        /// </summary>
-        /// <returns></returns>
-        public int TotalPriceWithOutDiescount()
-        {
-            int totalPrice = _orderItems.Sum(p => p.UnitPrice * p.Units);
-            return totalPrice;
-        }
-
-        public void ApplyDiscountCode(Discount discount)
-        {
-            this.AppliedDiscount = discount;
-            this.AppliedDiscountId = discount.Id;
-            this.DiscountAmount = discount.GetDiscountAmount(TotalPrice());
-        }
-
     }
 
 
@@ -110,6 +109,7 @@ namespace Domain.Order
     public class OrderItem
     {
         public int Id { get; set; }
+        public CatalogItem CatalogItem { get; set; }
         public int CatalogItemId { get; private set; }
         public string ProductName { get; private set; }
         public string PictureUri { get; private set; }
