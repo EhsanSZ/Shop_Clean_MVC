@@ -1,4 +1,5 @@
-﻿using Application.Dtos;
+﻿using Application.Catalogs.CatalogItems.UriComposer;
+using Application.Dtos;
 using Application.Interfaces.Contexts;
 using AutoMapper;
 using Common;
@@ -17,7 +18,9 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
         List<CatalogBrandDto> GetBrand();
         List<ListCatalogTypeDto> GetCatalogType();
         void AddToMyFavourite(string UserId, int CatalogItemId);
+        PaginatedItemsDto<FavouriteCatalogItemDto> GetMyFavourite(string UserId, int page = 1, int pageSize = 20);
         PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize);
+
     }
 
     public class CatalogItemService : ICatalogItemService
@@ -25,11 +28,13 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
 
         private readonly IDataBaseContext context;
         private readonly IMapper mapper;
+        private readonly IUriComposerService uriComposerService;
 
-        public CatalogItemService(IDataBaseContext context, IMapper mapper)
+        public CatalogItemService(IDataBaseContext context, IMapper mapper , IUriComposerService uriComposerService)
         {
             this.context = context;
             this.mapper = mapper;
+            this.uriComposerService = uriComposerService;
         }
 
         public PaginatedItemsDto<CatalogItemListItemDto> GetCatalogList(int page, int pageSize)
@@ -95,6 +100,32 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
             context.CatalogItemFavourites.Add(catalogItemFavourite);
             context.SaveChanges();
         }
+
+        public PaginatedItemsDto<FavouriteCatalogItemDto> GetMyFavourite(string UserId, int page = 1, int pageSize = 20)
+        {
+            var model = context.CatalogItems
+               .Include(p => p.CatalogItemImages)
+               .Include(p => p.Discounts)
+               .Include(p => p.CatalogItemFavourites)
+               .Where(p => p.CatalogItemFavourites.Any(f => f.UserId == UserId))
+               .OrderByDescending(p => p.Id)
+               .AsQueryable();
+            int rowCount = 0;
+
+            var data = model.PagedResult(page, pageSize, out rowCount)
+            .ToList()
+            .Select(p => new FavouriteCatalogItemDto
+            {
+                Id = p.Id,
+                Name = p.Name,
+                Price = p.Price,
+                Rate = 4,
+                AvailableStock = p.AvailableStock,
+                Image = uriComposerService
+                .ComposeImageUri(p.CatalogItemImages.FirstOrDefault().Src),
+            }).ToList();
+            return new PaginatedItemsDto<FavouriteCatalogItemDto>(page, pageSize, rowCount, data);
+        }
     }
 
     public class CatalogBrandDto
@@ -118,6 +149,16 @@ namespace Application.Catalogs.CatalogItems.CatalogItemServices
         public int AvailableStock { get; set; }
         public int RestockThreshold { get; set; }
         public int MaxStockThreshold { get; set; }
+    }
+
+    public class FavouriteCatalogItemDto
+    {
+        public int Id { get; set; }
+        public int Price { get; set; }
+        public int Rate { get; set; }
+        public int AvailableStock { get; set; }
+        public string Name { get; set; }
+        public string Image { get; set; }
     }
 }
 
