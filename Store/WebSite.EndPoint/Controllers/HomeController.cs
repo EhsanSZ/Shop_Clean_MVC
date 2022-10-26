@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Application.HomePageService;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -14,15 +15,18 @@ namespace WebSite.EndPoint.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IHomePageService homePageService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger , IHomePageService homePageService)
         {
             _logger = logger;
+            this.homePageService = homePageService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var data = homePageService.GetData();
+            return View(data);
         }
 
         public IActionResult Privacy()

@@ -25,6 +25,7 @@ using Application.Orders;
 using Application.Payments;
 using Application.Discounts;
 using Application.Orders.CustomerOrdersServices;
+using Application.HomePageService;
 
 namespace WebSite.EndPoint
 {
@@ -75,8 +76,7 @@ namespace WebSite.EndPoint
             services.AddTransient<IDiscountService, DiscountService>();
             services.AddTransient<IDiscountHistoryService, DiscountHistoryService>();
             services.AddTransient<ICustomerOrdersService, CustomerOrdersService>();
-
-            
+            services.AddTransient<IHomePageService, HomePageService>();
 
             services.AddScoped<SaveVisitorFilter>();
 
