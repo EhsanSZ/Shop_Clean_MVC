@@ -23,6 +23,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Discounts.AddNewDiscountServices;
 using Application.Discounts;
+using Application.Banners;
 
 namespace Admin.EndPoint
 {
@@ -49,6 +50,8 @@ namespace Admin.EndPoint
             services.AddTransient<IImageUploadService, ImageUploadService>();
             services.AddTransient<IAddNewDiscountService, AddNewDiscountService>();
             services.AddTransient<IDiscountService, DiscountService>();
+            services.AddTransient<IBannersService, BannersService>();
+
 
             services.AddTransient(typeof(IMongoDbContext<>), typeof(MongoDbContext<>));
 
