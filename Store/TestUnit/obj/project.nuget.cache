@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lkCF/NgTAy6+h6IbLy5LrR5mITq3HDyVMRvCWnSAwvEj8fJAQGVKDY5Tc7uv17Xl2Uoa3bePJqcbyXuiYdu8Fg==",
+  "dgSpecHash": "sO4n9/5qp5W5YAgwBIYStEUErdqJceDoW47YZnpLeXzYqiWx/dG9frXAhI7QzJoNWQ/AqH8x7wCeKIGOWRFS+A==",
   "success": true,
   "projectFilePath": "D:\\MyProje\\ASP.Net\\Shop_MVC_Core\\Store\\TestUnit\\TestUnit.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,9 @@
     "C:\\Users\\Ehsan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\md.persiandatetime.standard\\2.4.0\\md.persiandatetime.standard.2.4.0.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Ehsan\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Ehsan\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

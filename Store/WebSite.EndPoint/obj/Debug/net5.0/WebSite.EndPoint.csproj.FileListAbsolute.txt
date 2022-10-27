@@ -208,3 +208,6 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\V
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Components\BrandFilter\BrandFilter.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Areas\Customer\Views\MyFavourite\Index.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\obj\Debug\net5.0\Razor\Areas\Customer\Views\Orders\Index.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\MediatR.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\MediatR.Contracts.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\WebSite.EndPoint\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

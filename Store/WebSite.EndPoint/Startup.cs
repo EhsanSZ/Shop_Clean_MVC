@@ -26,6 +26,8 @@ using Application.Payments;
 using Application.Discounts;
 using Application.Orders.CustomerOrdersServices;
 using Application.HomePageService;
+using MediatR;
+using Application.Commetns.Commands;
 
 namespace WebSite.EndPoint
 {
@@ -42,6 +44,8 @@ namespace WebSite.EndPoint
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddMediatR(typeof(SendCommentCommand).Assembly);
 
             #region  Connection String
             string connection = Configuration["ConnectionString:SqlServer"];

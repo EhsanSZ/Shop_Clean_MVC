@@ -123,3 +123,5 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\MD.Persia
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\Discounts\Create.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\Banners\Create.cshtml.g.cs
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\obj\Debug\net5.0\Razor\Pages\Banners\Index.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\MediatR.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\Admin.EndPoint\bin\Debug\net5.0\MediatR.Contracts.dll

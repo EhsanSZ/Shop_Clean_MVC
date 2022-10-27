@@ -1,5 +1,8 @@
 ﻿using Application.Catalogs.CatalogItems.GetCatalogIItemPLP;
 using Application.Catalogs.CatalogItems.GetCatalogItemPDP;
+using Application.Commetns.Commands;
+using Application.Commetns.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,12 +15,14 @@ namespace WebSite.EndPoint.Controllers
     {
         private readonly IGetCatalogIItemPLPService getCatalogIItemPLPService;
         private readonly IGetCatalogItemPDPService getCatalogItemPDPService;
+        private readonly IMediator mediator;
 
         public ProductController(IGetCatalogIItemPLPService getCatalogIItemPLPService
-            , IGetCatalogItemPDPService getCatalogItemPDPService)
+            , IGetCatalogItemPDPService getCatalogItemPDPService , IMediator mediator)
         {
             this.getCatalogIItemPLPService = getCatalogIItemPLPService;
             this.getCatalogItemPDPService = getCatalogItemPDPService;
+            this.mediator = mediator;
         }
         public IActionResult Index(CatlogPLPRequestDto catlogPLPRequestDto)
         {
@@ -28,7 +33,22 @@ namespace WebSite.EndPoint.Controllers
         public IActionResult Details(int Id)
         {
             var data = getCatalogItemPDPService.Execute(Id);
+            
+            GetCommentOfCatalogItemRequest itemDto = new GetCommentOfCatalogItemRequest()
+            {
+                CataLogItemId = data.Id,
+            };
+            var result = mediator.Send(itemDto).Result;
+
             return View(data);
+        }
+
+        public IActionResult SendComment(CommentDto commentDto, int Id)
+        {
+            SendCommentCommand sendComment = new SendCommentCommand(commentDto);
+            var result = mediator.Send(sendComment).Result;
+            return RedirectToAction(nameof(Details), new { Id = Id });
+
         }
 
 

@@ -278,3 +278,6 @@ D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\obj\Debug\net5.0\TestUnit.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\obj\Debug\net5.0\ref\TestUnit.dll
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\obj\Debug\net5.0\TestUnit.pdb
 D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\obj\Debug\net5.0\TestUnit.genruntimeconfig.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\bin\Debug\net5.0\MediatR.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\bin\Debug\net5.0\MediatR.Contracts.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Store\TestUnit\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

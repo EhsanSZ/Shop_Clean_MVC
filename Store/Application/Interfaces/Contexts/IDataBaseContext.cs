@@ -28,6 +28,7 @@ namespace Application.Interfaces.Contexts
         DbSet<DiscountUsageHistory> DiscountUsageHistories { get; set; }
         DbSet<CatalogItemFavourite> CatalogItemFavourites { get; set; }
         DbSet<Banner> Banners { get; set; }
+        DbSet<CatalogItemComment> CatalogItemComments { get; set; }
 
         int SaveChanges();
         int SaveChanges(bool acceptAllChangesOnSuccess);
