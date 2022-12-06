@@ -1,0 +1,36 @@
+E:\src\StartsProject\StarProject\Domain\bin\Debug\net5.0\Domain.deps.json
+E:\src\StartsProject\StarProject\Domain\bin\Debug\net5.0\Domain.dll
+E:\src\StartsProject\StarProject\Domain\bin\Debug\net5.0\ref\Domain.dll
+E:\src\StartsProject\StarProject\Domain\bin\Debug\net5.0\Domain.pdb
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.dll
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\ref\Domain.dll
+E:\src\StartsProject\StarProject\Domain\obj\Debug\net5.0\Domain.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\bin\Debug\net5.0\Domain.deps.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\bin\Debug\net5.0\Domain.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\bin\Debug\net5.0\ref\Domain.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\bin\Debug\net5.0\Domain.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\ref\Domain.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Domain\obj\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\bin\Debug\net5.0\Domain.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\bin\Debug\net5.0\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\bin\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\ref\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Domain\obj\Debug\net5.0\refint\Domain.dll

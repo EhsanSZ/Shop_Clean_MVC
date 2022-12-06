@@ -1,0 +1,120 @@
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.Development.json
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.json
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.exe
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.deps.json
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.json
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.dev.json
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.dll
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\ref\StaticFile.EndPoint.dll
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.pdb
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.dll
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csprojAssemblyReference.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.GeneratedMSBuildEditorConfig.editorconfig
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfoInputs.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfo.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CoreCompileInputs.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.MvcApplicationPartsAssemblyInfo.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\staticwebassets\StaticFile.EndPoint.StaticWebAssets.Manifest.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\staticwebassets\StaticFile.EndPoint.StaticWebAssets.xml
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\scopedcss\bundle\StaticFile.EndPoint.styles.css
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.input.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.output.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorCoreGenerate.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cs
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.dll
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\ref\StaticFile.EndPoint.dll
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.pdb
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.genruntimeconfig.cache
+E:\src\StartsProject\StarProject\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CopyComplete
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.Development.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.StaticWebAssets.xml
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.exe
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.deps.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.dev.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\ref\StaticFile.EndPoint.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.AssemblyReference.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfoInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CoreCompileInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.MvcApplicationPartsAssemblyInfo.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\scopedcss\bundle\StaticFile.EndPoint.styles.css
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\staticwebassets\StaticFile.EndPoint.StaticWebAssets.Manifest.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.input.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.output.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorCoreGenerate.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\ref\StaticFile.EndPoint.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.genruntimeconfig.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.Development.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\appsettings.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.StaticWebAssets.xml
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.exe
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.runtimeconfig.dev.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\bin\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.MvcApplicationPartsAssemblyInfo.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorAssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\scopedcss\bundle\StaticFile.EndPoint.styles.css
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\staticwebassets\StaticFile.EndPoint.StaticWebAssets.Manifest.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.input.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.TagHelpers.output.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorCoreGenerate.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.RazorTargetAssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.Views.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\ref\StaticFile.EndPoint.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.genruntimeconfig.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\StaticFile.EndPoint.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\StaticFile.EndPoint\obj\Debug\net5.0\refint\StaticFile.EndPoint.dll

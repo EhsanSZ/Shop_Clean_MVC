@@ -1,0 +1,36 @@
+E:\src\StartsProject\StarProject\Common\bin\Debug\net5.0\Common.deps.json
+E:\src\StartsProject\StarProject\Common\bin\Debug\net5.0\Common.dll
+E:\src\StartsProject\StarProject\Common\bin\Debug\net5.0\ref\Common.dll
+E:\src\StartsProject\StarProject\Common\bin\Debug\net5.0\Common.pdb
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.dll
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\ref\Common.dll
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.pdb
+E:\src\StartsProject\StarProject\Common\obj\Debug\net5.0\Common.csprojAssemblyReference.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\bin\Debug\net5.0\Common.deps.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\bin\Debug\net5.0\Common.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\bin\Debug\net5.0\ref\Common.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\bin\Debug\net5.0\Common.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\ref\Common.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Common\obj\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\bin\Debug\net5.0\Common.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\bin\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\bin\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\refint\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Common\obj\Debug\net5.0\ref\Common.dll

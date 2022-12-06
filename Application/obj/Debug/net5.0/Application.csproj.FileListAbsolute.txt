@@ -1,0 +1,51 @@
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Application.deps.json
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Application.dll
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\ref\Application.dll
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Application.pdb
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Common.dll
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Domain.dll
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Common.pdb
+E:\src\StartsProject\StarProject\Application\bin\Debug\net5.0\Domain.pdb
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.csprojAssemblyReference.cache
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.dll
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\ref\Application.dll
+E:\src\StartsProject\StarProject\Application\obj\Debug\net5.0\Application.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Application.deps.json
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Application.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\ref\Application.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Application.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Common.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Domain.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Common.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\bin\Debug\net5.0\Domain.pdb
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\ref\Application.dll
+E:\.Net\ASP.NET\2.Bugeto\20 - Project\src\20-54 CQRS\Application\obj\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Application.deps.json
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Application.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Common.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Domain.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Common.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\bin\Debug\net5.0\Domain.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.csproj.AssemblyReference.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.AssemblyInfo.cs
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.csproj.CoreCompileInputs.cache
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.csproj.CopyComplete
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\ref\Application.dll
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\Application.pdb
+D:\MyProje\ASP.Net\Shop_MVC_Core\Application\obj\Debug\net5.0\refint\Application.dll
